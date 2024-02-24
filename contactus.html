@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://source.unsplash.com/random/200x200/?shirt">
+    <title>ZORO </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <h1 style="padding-left: 20px;font-weight: 3000;font-size: 30px;">ZORO</h1>
+        <div class="navbar-links">
+            <p class="navbar-link">
+                <a href="index.html">Home</a>
+            </p>
+            <p class="navbar-link">
+                <a href="collection.html">Collection</a>
+            </p>
+            <p class="navbar-link">
+                <a href="">contact</a>
+            </p>
+        </div>
+        <div class="navbar-menu-toggle"  >
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+    </nav>
+    <div id="side"  >
+        <p id="s"><i class="fa-solid fa-xmark"></i></p>
+        <p><i id="fa-solid fa-xmark"></i></p>
+        <div id="sidenavbar-links">
+            <p id="sidenavbar-link">
+                <a href="index.html">Home</a>
+            </p>
+            <p id="sidenavbar-link">
+                <a href="collection.html">Collection</a>
+            </p>
+            <p id="sidenavbar-link">
+                <a href="">contact</a>
+            </p>
+           
+        </div>
+    </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color:rgb(27, 2, 51);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            
+        }
+        textarea {
+            height: 150px;
+        }
+        input[type="submit"] {
+            background-color: #ffffff;
+            color: rgb(27, 2, 51);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+           
+        }
+        
+       label{
+        color: white;
+       }
+       input,textarea:focus{
+        outline: none;
+       }
+    </style>
+    </head>
+    <body>
+    
+    <div class="container">
+        <h1 style="color: white;margin: 10px;">Contact Us</h1>
+        <form >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <input id="ho" type="submit" value="Submit" style="display: block;margin-left: auto;margin-right: auto;">
+        </form>
+    </div>
+  
+
+<div class="about" style="background-color: rgb(27, 2, 51);color: white;margin-top: 20px;padding: 10px;margin-top: 20px;">
+    <h1>ZORO</h1>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, fugit nulla! Quod, quo eveniet minus dolorem impedit labore dignissimos ipsum velit, praesentium consequuntur necessitatibus, nulla cupiditate. Repudiandae fugiat magni tempora.</h4>
+    <div style="display: flex;gap: 30px;margin-top: 20px;">
+        <p>
+            <a href="https://www.instagram.com/?hl=en" style="color: white;font-size: 40px; "><i class="fa-brands fa-instagram"></i></a>
+        </p>
+        <p>
+            <a href="https://www.facebook.com/" style="color: white;font-size: 40px; "><i class="fa-brands fa-twitter"></i></a>
+        </p>
+<p>
+    <a href="https://twitter.com/?lang=en-in" style="color: white;font-size: 40px; "><i class="fa-brands fa-square-facebook"></i></a>
+</p>
+    </div>
+    
+</div>
+<div  style="background-color: rgb(27, 2, 51);text-align: center;padding: 8px; color: white;"><h3 >Zoro@copyright2024 </h3>
+</div>
+</body>
+
+</html>
+<script>
+    var btn = document.querySelector(".navbar-menu-toggle")
+    var sidebar = document.getElementById("side")
+      
+    btn.addEventListener("click",function(){
+        sidebar.style.display="block"
+        sidebar.style.left="0%"
+        
+    })
+    // btn.addEventListener("Doubleclick",function(){
+    //     sidebar.style.display="none"
+    // })
+    var xmark = document.getElementById("s")
+   xmark.addEventListener("click",function(){
+    sidebar.style.display="none"
+    // sidebar.style.left="-50%"
+   })
+   var ho = document.getElementById("ho")
+   ho.addEventListener("click",function(){
+    
+    alert("thanks for your wonderful feedback")
+   })
+
+</script>
